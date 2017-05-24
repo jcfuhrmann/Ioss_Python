@@ -4,7 +4,7 @@ def qsort(arr, left, right):
         #divide array in two "unequal" parts, smaller elements on left
         pos = part(arr, left, right)
         #sort the left side recursively
-        qsort(arr, 0, pos - 1)
+        qsort(arr, left, pos - 1)
         #sort the right
         qsort(arr, pos + 1, right)
     
